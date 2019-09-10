@@ -1,0 +1,8 @@
+模块注释
+	首页	homePage
+	三维沙盘	sandTable
+	户型图	houseType
+	区位	zoneBit
+	电子楼书	introduce
+	版权	copyright
+	后台入库	backstageEntrance

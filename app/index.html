@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<title>人偶的华尔兹</title>
+	<!--JQ插件-->
+	<script src="static/js/jquery.min.js"></script>
+	
+	<style type="text/css">
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			font-family: kaiti;
+			font-weight: 600;
+		}
+		/*字体包*/
+		@font-face {
+			font-family: "kaiti";
+			src: url("static/css/kaiti.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="app"></div>
+	<!-- built files will be auto injected -->
+	<script type="text/javascript">
+		/*获取页面宽度  进行修改项目根字体大小 进行页面适配*/
+		var width = document.documentElement.offsetWidth;
+		var height = document.documentElement.clientHeight;
+		// 得到默认fontsize
+		var doc = document.getElementsByTagName("html")[0];
+		var offWidth = width / 20; //这里用宽度/20表示1rem取得的px
+		doc.style.fontSize = offWidth + 'px';
+//		window.onload = function () {
+//			// 阻止双击放大
+//			var lastTouchEnd = 0;
+//			document.addEventListener('touchstart', function (event) {
+//				if (event.touches.length > 1) {
+//					event.preventDefault();
+//				}
+//			});
+//			document.addEventListener('touchend', function (event) {
+//				var now = (new Date()).getTime();
+//				if (now - lastTouchEnd <= 300) {
+//					event.preventDefault();
+//				}
+//				lastTouchEnd = now;
+//			}, false);
+//
+//			// 阻止双指放大
+//			document.addEventListener('gesturestart', function (event) {
+//				event.preventDefault();
+//			});
+//
+//			var startY, endY;
+//			//记录手指触摸的起点坐标
+//			$('body').on('touchstart', function (e) {
+//				startY = e.touches[0].pageY;
+//			});
+//			$('body').on('touchmove', function (e) {
+//				endY = e.touches[0].pageY; //记录手指触摸的移动中的坐标
+//				//手指下滑，页面到达顶端不能继续下滑
+//				if (endY > startY && $(window).scrollTop() <= 0) {
+//					e.preventDefault();
+//				}
+//				//手指上滑，页面到达底部能继续上滑
+//				if (endY < startY && $(window).scrollTop() +
+//					$(window).height() >= $('body')[0].scrollHeight) {
+//					e.preventDefault();
+//				}
+//			})
+//
+//			$('img').on('mousedown', function (e) {
+//				e.preventDefault()
+//			})
+//
+//		}
+	</script>
+</body>
+
+</html>
